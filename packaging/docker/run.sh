@@ -1,5 +1,5 @@
 #!/bin/bash -e
-
+aws s3 cp s3://billback-service-grafana-github-auth/conf/defaults.ini  /usr/share/grafana/conf/defaults.ini
 PERMISSIONS_OK=0
 
 if [ ! -r "$GF_PATHS_CONFIG" ]; then
